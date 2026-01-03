@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mika (Jaeyun) Noh | Global AI Culture Policy Curator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #C5A059;
+            --deep-bg: #080808;
+            --glass: rgba(255, 255, 255, 0.02);
+        }
+        body {
+            background-color: var(--deep-bg);
+            color: #e5e5e5;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        .serif-title { font-family: 'Cormorant Garamond', serif; }
+        .glass-card {
+            background: var(--glass);
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.4s ease;
+        }
+        .glass-card:hover {
+            border-color: var(--gold);
+            background: rgba(255,255,255,0.04);
+        }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .text-gradient {
+            background: linear-gradient(to right, #C5A059, #F9F1E0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.6; transition: opacity 0.3s; }
+        .nav-link:hover { opacity: 1; color: var(--gold); }
+        
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 0.5rem;
+            margin-right: 1.5rem;
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            color: var(--gold);
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+            transition: all 0.3s ease;
+        }
+        .project-link:hover {
+            border-color: var(--gold);
+            padding-left: 4px;
+            opacity: 0.8;
+        }
+
+        .profile-img-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 2rem;
+            position: relative;
+            padding: 5px;
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            border-radius: 9999px;
+        }
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 9999px;
+            filter: grayscale(20%);
+        }
+
+        .roadmap-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 12px;
+        }
+
+        .highlight-box {
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            background: linear-gradient(145deg, rgba(197, 160, 89, 0.05) 0%, rgba(0,0,0,0) 100%);
+        }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #080808; }
+        ::-webkit-scrollbar-thumb { background: #333; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-[100] px-6 md:px-12 py-6 bg-black/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter serif-title uppercase tracking-[0.1em]">Mika <span class="text-[#C5A059]">Jaeyun</span> Noh</div>
+            <div class="hidden lg:flex space-x-8">
+                <a href="#vision" class="nav-link">Vision</a>
+                <a href="#strategy" class="nav-link">Pathways</a>
+                <a href="#experience" class="nav-link">Leadership</a>
+                <a href="#publications" class="nav-link">Archive</a>
+                <a href="#contact" class="nav-link text-[#C5A059] opacity-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="vision" class="min-h-screen flex flex-col items-center justify-center px-6 pt-32 pb-12">
+        <div class="max-w-6xl w-full">
+            <div class="reveal max-w-5xl mx-auto text-center mb-16">
+                <!-- Profile Image added here -->
+                <div class="profile-img-container">
+                    <!-- Replace 'profile.jpg' with your actual image URL or path -->
+                    <img src="profile.jpg" alt="Mika Jaeyun Noh" class="profile-img" onerror="this.src='https://via.placeholder.com/180x180?text=Mika+Noh'">
+                </div>
+
+                <h1 class="text-5xl md:text-7xl serif-title leading-[1.1] mb-8 font-medium">
+                    Global AI Culture <span class="italic text-gradient">Policy Curator</span>
+                </h1>
+                <p class="text-xs font-semibold tracking-[0.4em] uppercase text-[#C5A059] mb-8 leading-relaxed">
+                    Co-Founder & Chair, AI Art Forum | Advisor, National Assembly of Korea | <br class="hidden md:block">
+                    Architecting the Future of Machine-Human Creative Governance
+                </p>
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-lg md:text-xl font-light opacity-60 leading-relaxed italic border-l-2 border-[#C5A059]/30 pl-6 text-left md:text-center md:border-l-0">
+                        "I design systems where intelligence meets agency—bridging legal rigor with creative intuition to architect sustainable global governance."
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto reveal mt-12">
+                <div class="p-8 border border-white/5 bg-white/[0.01] rounded-sm transition-all hover:border-[#C5A059]/30">
+                    <h4 class="text-[10px] font-bold text-[#C5A059] mb-4 uppercase tracking-[0.2em]">Global Governance</h4>
+                    <p class="text-[11px] leading-relaxed opacity-60">Integrating AI and ESG into climate-responsive cultural frameworks for trans-regional stability.</p>
+                </div>
+                <div class="p-8 border border-white/5 bg-white/[0.01] rounded-sm transition-all hover:border-[#C5A059]/30">
+                    <h4 class="text-[10px] font-bold text-[#C5A059] mb-4 uppercase tracking-[0.2em]">Digital Model</h4>
+                    <p class="text-[11px] leading-relaxed opacity-60">Positioning digital cultural governance as a scalable blueprint for emerging global regions.</p>
+                </div>
+                <div class="p-8 border border-white/5 bg-white/[0.01] rounded-sm transition-all hover:border-[#C5A059]/30">
+                    <h4 class="text-[10px] font-bold text-[#C5A059] mb-4 uppercase tracking-[0.2em]">Legal Aesthetics</h4>
+                    <p class="text-[11px] leading-relaxed opacity-60">Interpreting AI imagery through a legislative lens, exploring how algorithmic aesthetics encode power.</p>
+                </div>
+                <div class="p-8 border border-white/5 bg-white/[0.01] rounded-sm transition-all hover:border-[#C5A059]/30">
+                    <h4 class="text-[10px] font-bold text-[#C5A059] mb-4 uppercase tracking-[0.2em]">Creative Workforce</h4>
+                    <p class="text-[11px] leading-relaxed opacity-60">Architecting equitable labor frameworks for artists in the age of algorithmic production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Pathways Section -->
+    <section id="strategy" class="py-32 px-6 bg-[#0c0c0c] border-y border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-[10px] font-bold tracking-[0.5em] text-[#C5A059] mb-4 uppercase text-center reveal">Mission & Architecture</h2>
+            <h3 class="text-4xl serif-title italic mb-20 text-center reveal">Curating Intelligence</h3>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Strategic Role Positioning -->
+                <div class="reveal">
+                    <h4 class="text-xl serif-title mb-6 text-white">The System Architect's Vision</h4>
+                    <p class="text-sm opacity-50 leading-relaxed mb-10">
+                        Operating at the intersection of cultural policy, law, and AI. My work formalizes the role of machine intelligence within human society through robust, trust-based legal and artistic architectures.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <span class="roadmap-dot mt-1.5"></span>
+                            <div>
+                                <h5 class="text-sm font-semibold mb-1">Systemic Ecosystem Curator</h5>
+                                <p class="text-xs opacity-60 leading-relaxed">Designing interconnected networks where technology serves as a catalyst for sustainable cultural and economic evolution.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="roadmap-dot mt-1.5"></span>
+                            <div>
+                                <h5 class="text-sm font-semibold mb-1">Policy Architect</h5>
+                                <p class="text-xs opacity-60 leading-relaxed">Translating legal foundations and top-tier legislative experience into global AI ethics frameworks.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="roadmap-dot mt-1.5"></span>
+                            <div>
+                                <h5 class="text-sm font-semibold mb-1">Global Market Strategist</h5>
+                                <p class="text-xs opacity-60 leading-relaxed">Bridging Asian cultural assets with global digital infrastructure through institutional leadership.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Advisory Summary -->
+                <div class="reveal">
+                    <h4 class="text-xl serif-title mb-6 text-white">Global Advisory Compass</h4>
+                    <div class="space-y-4">
+                        <div class="p-6 bg-white/[0.02] border border-white/5 hover:border-[#C5A059]/30 transition-all">
+                            <h5 class="text-[#C5A059] text-[9px] font-bold uppercase tracking-widest mb-2">Institutional Impact</h5>
+                            <p class="text-[11px] opacity-50 leading-relaxed">UNESCO / ENCATC / MONDIACULT <br>Digital Heritage & AI ethics advisory services.</p>
+                        </div>
+                        <div class="p-6 bg-white/[0.02] border border-white/5 hover:border-[#C5A059]/30 transition-all">
+                            <h5 class="text-[#C5A059] text-[9px] font-bold uppercase tracking-widest mb-2">Governance Design</h5>
+                            <p class="text-[11px] opacity-50 leading-relaxed">OECD / G20 / Regional Forums <br>Creative labor & platform governance architecture.</p>
+                        </div>
+                        <div class="p-6 bg-white/[0.02] border border-white/5 hover:border-[#C5A059]/30 transition-all">
+                            <h5 class="text-[#C5A059] text-[9px] font-bold uppercase tracking-widest mb-2">Systemic Visibility</h5>
+                            <p class="text-[11px] opacity-50 leading-relaxed">Keynotes at Frieze Seoul, Venice Biennale, and global AI governance summits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-[10px] font-bold tracking-[0.5em] text-[#C5A059] mb-4 uppercase text-center reveal">Track Record</h2>
+            <h3 class="text-4xl serif-title italic mb-20 text-center reveal">Professional Leadership</h3>
+
+            <div class="space-y-6">
+                <!-- AI Art Forum -->
+                <div class="glass-card p-10 reveal highlight-box">
+                    <div class="flex flex-col md:flex-row justify-between items-start">
+                        <div class="mb-4 md:mb-0">
+                            <span class="text-[10px] font-bold text-[#C5A059] tracking-widest uppercase">2025 — Present</span>
+                            <h3 class="text-2xl font-medium mt-2">Co-founder & Chairman | AI Art Forum (AiAF)</h3>
+                        </div>
+                        <div class="md:w-2/3">
+                            <ul class="text-sm opacity-60 space-y-3 leading-relaxed">
+                                <li>• Orchestrating international systems for AI ethics and machine-mediated creativity.</li>
+                                <li>• Architecting the "Human Involvement Certificate" for global artistic validation.</li>
+                                <li>• Building strategic infrastructure for trust-based Art-Tech ecosystems.</li>
+                            </ul>
+                            <div class="flex flex-wrap mt-6">
+                                <a href="https://www.aiaf.world/" target="_blank" class="project-link">AIAF Global →</a>
+                                <a href="https://curator-ai-contemporary-art-builder-433765398889.us-west1.run.app/" target="_blank" class="project-link">Curator AI Platform →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Advisors -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="glass-card p-10 reveal">
+                        <span class="text-[10px] font-bold text-[#C5A059] tracking-widest uppercase">2024 — Present</span>
+                        <h3 class="text-xl font-medium mt-2 mb-4">Strategy Director | Niio Art</h3>
+                        <p class="text-xs opacity-60 leading-relaxed">
+                            Architecting digital art market infrastructure across Asia, scaling institutional digital showcases and landmark asset models.
+                        </p>
+                    </div>
+                    <div class="glass-card p-10 reveal">
+                        <span class="text-[10px] font-bold text-[#C5A059] tracking-widest uppercase">Legislative Foundation</span>
+                        <h3 class="text-xl font-medium mt-2 mb-4">Director | National Assembly</h3>
+                        <p class="text-xs opacity-60 leading-relaxed">
+                            Lead designer of the 'Artist Welfare Act' and 'Art Promotion Act' frameworks, translating complex policy into artistic protection.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ecosystem Foundations (Co-founder Roles) -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="glass-card p-10 reveal">
+                        <span class="text-[10px] font-bold text-[#C5A059] tracking-widest uppercase">Experimental Hub</span>
+                        <h3 class="text-xl font-medium mt-2 mb-4">Co-founder | Space Ba</h3>
+                        <p class="text-xs opacity-60 leading-relaxed mb-6">
+                            Established an experimental hub to test human-AI collaboration in real-world environments through immersive media art.
+                        </p>
+                        <a href="https://www.instagram.com/sewoon_spaceba/" target="_blank" class="project-link">Space Ba Instagram →</a>
+                    </div>
+                    <div class="glass-card p-10 reveal">
+                        <span class="text-[10px] font-bold text-[#C5A059] tracking-widest uppercase">Creative Consortium</span>
+                        <h3 class="text-xl font-medium mt-2 mb-4">Co-founder | AMFM</h3>
+                        <p class="text-xs opacity-60 leading-relaxed mb-6">
+                            Pioneered a creative consortium connecting hi-fi makers and designers to build innovative audio-visual economic pillars.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1yLhwCAMMEhMUz4TBUU8lKocS7XYIhZNz/view" target="_blank" class="project-link">AMFM Vision →</a>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="pt-16 reveal">
+                    <h4 class="text-[11px] font-bold tracking-[0.3em] text-white/40 uppercase mb-8 border-b border-white/10 pb-4">Education & Academic Roots</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="p-8 bg-white/[0.01] border border-white/5">
+                            <h5 class="text-base font-semibold mb-2">Korea National University of Arts</h5>
+                            <p class="text-[10px] text-[#C5A059] font-bold uppercase tracking-widest mb-3">M.A. in Arts Management</p>
+                            <p class="text-xs opacity-50 italic">Thesis: "A Study on the Employment Insurance System for Artists" (2022)</p>
+                        </div>
+                        <div class="p-8 bg-white/[0.01] border border-white/5">
+                            <h5 class="text-base font-semibold mb-2">Ewha Womans University</h5>
+                            <p class="text-[10px] text-[#C5A059] font-bold uppercase tracking-widest mb-3">B.A. in Law</p>
+                            <p class="text-xs opacity-50">Legal foundations for digital cultural governance and policy design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications & Archive Section -->
+    <section id="publications" class="py-32 px-6 bg-[#0c0c0c]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-[10px] font-bold tracking-[0.5em] text-[#C5A059] mb-4 uppercase">Intellectual Capital</h2>
+                <h3 class="text-4xl md:text-5xl serif-title italic">Curating Intelligence</h3>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Books -->
+                <div class="reveal lg:col-span-1">
+                    <h4 class="text-[11px] font-bold tracking-[0.3em] text-[#C5A059] uppercase mb-8 border-b border-white/10 pb-4">Major Works & Philosophy</h4>
+                    <div class="space-y-6">
+                        <div class="p-8 border-2 border-[#C5A059] bg-[#C5A059]/10 rounded-sm relative overflow-hidden">
+                            <div class="absolute top-0 right-0 p-2 opacity-10 font-bold italic text-4xl serif-title tracking-tighter">Core</div>
+                            <h5 class="text-xl font-bold mb-2 text-white">Curating Intelligence</h5>
+                            <p class="text-[10px] text-[#C5A059] font-bold uppercase tracking-widest mb-4">Global Framework, 2026</p>
+                            <p class="text-[12px] opacity-80 leading-relaxed">
+                                A comprehensive manual for architecting systems where machine capability and human intuition coexist, defining new standards for global AI-cultural governance.
+                            </p>
+                        </div>
+                        <div class="p-8 border border-white/10 bg-white/[0.02]">
+                            <h5 class="text-lg font-semibold mb-1">K-Intelligence</h5>
+                            <p class="text-[9px] text-[#C5A059] font-bold uppercase tracking-widest mb-4">Policy & Systems, 2027</p>
+                            <p class="text-[12px] opacity-60 leading-relaxed mb-4">
+                                Reframing popular media as <span class="text-white italic">cultural infrastructure</span>. An investigation into how Korea thinks through media—bridging cinema, webtoons, and AI idols as strategic sites of technology governance and international positioning.
+                            </p>
+                            <p class="text-[9px] opacity-30 italic">Alternative: Beyond K-Pop: The Hidden Systems Behind Korea's Global Influence</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Documents & Research -->
+                <div class="reveal">
+                    <h4 class="text-[11px] font-bold tracking-[0.3em] text-white/40 uppercase mb-8 border-b border-white/10 pb-4">Selected Research</h4>
+                    <div class="space-y-8">
+                        <div>
+                            <a href="https://mondiacult2025.com/wp-content/uploads/2025/09/CW_Noh_Mika-Jaeuyn_The-Code-That-Painted-the-Sky.pdf" target="_blank" class="hover:text-[#C5A059] transition-colors group">
+                                <h5 class="text-base font-medium mb-1 group-hover:pl-2 transition-all">The Code That Painted the Sky →</h5>
+                            </a>
+                            <p class="text-[9px] opacity-40 uppercase mb-2">UNESCO MONDIACULT, 2025</p>
+                        </div>
+                        <div>
+                            <a href="https://www.nars.go.kr/report/view.do?page=3&cmsCode=CM0043&brdSeq=44910" target="_blank" class="hover:text-[#C5A059] transition-colors group">
+                                <h5 class="text-base font-medium mb-1 group-hover:pl-2 transition-all">Art Promotion Act Analysis →</h5>
+                            </a>
+                            <p class="text-[9px] opacity-40 uppercase mb-2">National Assembly Research, 2024</p>
+                        </div>
+                        <div>
+                            <a href="https://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=1881f5b4ae887313ffe0bdc3ef48d419" target="_blank" class="hover:text-[#C5A059] transition-colors group">
+                                <h5 class="text-base font-medium mb-1 group-hover:pl-2 transition-all">Artist Employment Insurance Thesis →</h5>
+                            </a>
+                            <p class="text-[9px] opacity-40 uppercase mb-2">Korea National University of Arts, 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Archive Focus -->
+                <div class="reveal">
+                    <h4 class="text-[11px] font-bold tracking-[0.3em] text-white/40 uppercase mb-8 border-b border-white/10 pb-4">Editorial Presence</h4>
+                    <div class="p-8 bg-white/[0.03] border border-white/5 rounded-sm">
+                        <h5 class="text-lg font-medium mb-4">30+ Editorial Pieces</h5>
+                        <p class="text-xs opacity-50 leading-relaxed mb-8">A decade of cultural critique focusing on the systemic protection of artistic value in the digital era and AI ethics.</p>
+                        <a href="https://drive.google.com/file/d/17pkRQaTRDuaIw0MpUsBWciS4BFXE3--1/view" target="_blank" class="w-full text-center block bg-[#C5A059] text-black text-[9px] font-bold uppercase tracking-[0.2em] px-6 py-4 hover:bg-white transition-colors">Open Full Publication Archive</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <section id="contact" class="py-32 px-6 border-t border-white/5">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <h3 class="text-4xl md:text-5xl serif-title italic mb-12">Strategic Governance Advisory</h3>
+            <div class="flex flex-col items-center space-y-6">
+                <a href="mailto:mikaroh0413@gmail.com" class="text-2xl font-light hover:text-[#C5A059] transition-colors border-b border-white/10 pb-2">mikaroh0413@gmail.com</a>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/mikaroh/?profileId=ACoAABaJFksBPWUTji_SOI4sFs3Wocys3hzEzJE" target="_blank" class="text-[10px] font-bold text-[#C5A059] tracking-widest uppercase hover:text-white transition-colors">LinkedIn Profile →</a>
+                </div>
+            </div>
+            <p class="text-[10px] uppercase tracking-[0.5em] opacity-20 mt-32">© 2026 Mika Jaeyun Noh | System Architect of AI & Culture</p>
+        </div>
+    </section>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
